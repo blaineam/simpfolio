@@ -1,0 +1,415 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+.blur {
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);
+}
+
+
+
+#topcssbackgroundslider,
+#topcssbackgroundslider:after { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+}
+#topcssbackgroundslider:after { 
+    content: '';
+}
+
+.darken{
+    background-color: rgba(0, 0, 0, 0.57);
+}
+
+#topcontent{
+	transition:filter 1s ease;
+}
+
+#topcssbackgroundslider li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+
+#topcssbackgroundslider li:nth-child(1) span { 
+    background-image: url(../images/1.jpg) 
+}
+#topcssbackgroundslider li:nth-child(2) span { 
+    background-image: url(../images/2.jpg);
+    animation-delay: 6s; 
+}
+#topcssbackgroundslider li:nth-child(3) span { 
+    background-image: url(../images/3.jpg);
+    animation-delay: 12s; 
+}
+#topcssbackgroundslider li:nth-child(4) span { 
+    background-image: url(../images/4.jpg);
+    animation-delay: 18s; 
+}
+#topcssbackgroundslider li:nth-child(5) span { 
+    background-image: url(../images/5.jpg);
+    animation-delay: 24s; 
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+body{
+	font-family: sans-serif;
+	color: white;
+	background-color: black;
+	font-weight: 100;
+	overflow-x: hidden;
+}
+
+#menu{
+	width: 96vw;
+	min-height: 5vh;
+	font-size: 4vh;
+	padding: 0.5vh 2vw;
+	background: rgba(61, 60, 60, 0.8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	list-style: none;
+	text-align: center;
+}
+#menu li, #menu li a{
+	width: auto;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	color: white;
+	display: inline-block;
+	text-decoration: none;	
+vertical-align: middle;
+margin: 0.5vh 1vw;
+}
+#menu .social{
+	margin-left: 1vw;
+	margin-right: 1vw;
+margin-top: -0.5vh;
+}
+
+#menu .social,
+#menu .social a,
+#menu .social img{
+	width: 4vh;
+	height: 4vh;
+}
+#gallery{
+	
+  cursor: pointer;
+  margin-left: 2vw;
+}
+#top, #showcase{
+	min-height: 95vh;
+	position: relative;
+	z-index: 1;
+}
+#top{
+	width: 90vw;
+	padding: 0vh 5vw;
+	padding-top: 10vh;
+	
+}
+#profileimage{
+	position: relative;
+	margin-top:5vh;
+	margin-bottom:5vh;
+	margin-left: 5vh;
+	width: 20vw;
+	height: auto;
+	display: block;
+float: left;
+margin-right: 5vh;
+}
+#name{
+	font-size: 10vh;
+	color: white;
+}
+#title{
+	font-size: 7vh;
+	color: white;
+	line-height: 300%;
+}
+#bio{
+	font-size: 6vh;
+	color: white;
+}
+#summary{
+	font-size: 5vh;
+	color: white;
+}
+#skills{
+	list-style: none;
+}
+#skills li{
+	display: inline-block;
+	margin: 1vw;
+}
+#skills li p{
+	font-size: 4vh;
+}
+
+.bottomlinks {
+    font-size: 4vh;
+    color: white;
+    display: inline-block;
+    margin: 1vw;
+    position: relative;
+    margin-top: 20vh;
+    text-align: center;
+    font-weight: 400;
+    width: 27vw;
+    padding-bottom: 5vh;
+}
+#resume{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+#showcase{
+	
+  overflow: hidden !important;
+  width: 100vw !important;
+  height: 90vh !important;
+  margin: 0vw !important;
+  padding: 0vw !important;
+  padding-top: 5vh;
+}
+
+#showcase ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  width: auto;
+  list-style: none;
+  left: 0vw;
+  margin: 8vh 0vw;
+}
+
+#showcase ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 90vh;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 90vh;
+}
+
+#previousitem, #nextitem {
+  position: absolute;
+  top: 45vh;
+  z-index: 4;
+  display: block;
+  padding: 2% 2%;
+  width: 2vw;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 4vh;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#previousitem:hover, #nextitem:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+#previousitem {
+  border-radius: 0 2px 2px 0;
+}
+
+#nextitem {
+  right: 0vw;
+  border-radius: 2px 0 0 2px;
+}
+
+
+#showcase li:nth-child(1) { 
+    background-image: url(../images/work1.jpg) 
+}
+#showcase li:nth-child(2) { 
+    background-image: url(../images/work2.jpg);
+}
+#showcase li:nth-child(3) { 
+    background-image: url(../images/work3.jpg);
+}
+#showcase li:nth-child(4) { 
+    background-image: url(../images/work4.jpg);
+}
+
+
+
+#footer{
+	width: 96vw;
+	min-height: 5vh;
+	font-size: 4vh;
+	color: white;
+	background-color: #3a3a3a;
+	padding: 0.5vh 2vw;	
+	text-align: center;
+	margin-top: 8vh;
+}
+
+@media screen and (max-width: 1023px) {
+	
+#top{
+	padding-top: 20vh;
+	
+}
+
+#profileimage{
+	width: 67vw;
+}
+#name{
+	font-size: 7vh;
+	line-height: 7vh;
+	margin-bottom: 5vh;
+}
+#title{
+	font-size:6.5vh;
+	line-height: 6.5vh;
+	margin-bottom: 5vh;
+}
+#bio{
+	font-size: 6vh;
+	line-height: 6vh;
+	margin-bottom: 5vh;
+}
+
+
+}
